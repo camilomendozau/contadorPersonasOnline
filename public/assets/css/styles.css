@@ -93,12 +93,9 @@ line {
   grid-row: 2/3;
   height: 80%;
   margin: auto 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: block;
   overflow-y: scroll;
-  overscroll-behavior-x: initial;
+  overscroll-behavior-x: inherit;
   scroll-snap-type: proximity;
 }
 .counter__card {
@@ -106,6 +103,8 @@ line {
   min-height: 350px;
   max-width: 600px;
   margin: 3vw;
+  margin-bottom: 8%;
+  margin-left: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
