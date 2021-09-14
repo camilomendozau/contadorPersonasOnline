@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="spa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contador de Personas Online</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="main-title">ContOnline</h1>
+
+      <nav class="menu-bar-container">
+        <svg class="menu-bar__image-svg-icon">
+          <line x1="6" y1="11" x2="34" y2="11" />
+          <line x1="6" y1="21" x2="34" y2="21" />
+          <line x1="6" y1="31" x2="34" y2="31" />
+        </svg>
+        <svg class="menu-bar__image-svg-icon">
+          <line x1="10" y1="30" x2="30" y2="10" />
+          <line x1="10" y1="10" x2="30" y2="30" />
+        </svg>
+        <ul class="nav-bar__links">
+          <li><a href="/" class="nav-bar__item">Home</a></li>
+          <li><a href="/" class="nav-bar__item">Contactanos</a></li>
+          <li><a href="/" class="nav-bar__item">Ayuda</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="counters--container" id="counterContainer"></div>
+      <div class="add-counter-button--container">
+        <button class="add-button" type="button" id="addNewCounterButton">
+          <svg class="menu-bar__image-svg-icon">
+            <line x1="10" y1="13" x2="30" y2="13" />
+            <line x1="20" y1="3" x2="20" y2="23" />
+          </svg>
+        </button>
+      </div>
+    </main>
+    <footer></footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.9.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.9.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+
+    <!-- AdShort.co Banner code 468x60 END -->
+    <script src="/__/firebase/init.js"></script>
+    <script src="./js/counter.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

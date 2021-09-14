@@ -1,4 +1,4 @@
-class Marker {
+class Counter {
   constructor(increment, idMarker) {
     this.counter = 0;
     this.increment = parseInt(increment);
