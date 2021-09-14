@@ -151,12 +151,19 @@ line {
 .button-increment:hover {
   background-color: #f33c2e;
 }
-.add-counter-button--container {
-  width: 50px;
-  height: 50px;
+.fixed-buttons-container {
   position: fixed;
   right: 15px;
   bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fixed-buttons-container div {
+  width: 50px;
+  height: 50px;
+  margin: 25%;
 }
 .add-button {
   width: 100%;
