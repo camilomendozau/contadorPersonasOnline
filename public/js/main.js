@@ -3,11 +3,11 @@ addNewCounterButton.addEventListener("click", addNewCounter);
 
 var numeroEquipos = 0;
 
+const containerCounters = document.getElementById("counterContainer");
+
 const listaContadores = [];
 var newCounter = new Counter(1, numeroEquipos);
 listaContadores[numeroEquipos] = newCounter;
-
-const containerCounters = document.getElementById("counterContainer");
 
 containerCounters.insertAdjacentHTML(
   "beforeend",
@@ -25,13 +25,9 @@ buttonIncrement.addEventListener("click", incrementCounter);
 
 function incrementCounter(event) {
   var contadorAsignado = parseInt(event.target.id.split("bM")[1]);
-  //console.log(listaContadores[contadorAsignado]);
   var contenedorNumero = listaNumberContainer[contadorAsignado];
   contenedorNumero.innerText = listaContadores[contadorAsignado].getCounter();
-  //numberContainer = listaContadores[contadorAsignado];
-  //numberContainer.innerText = newCounter.getCounter();
 }
-
 function addNewCounter(event) {
   numeroEquipos++;
   newCounter = new Counter(1, numeroEquipos);

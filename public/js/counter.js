@@ -4,10 +4,13 @@ class Counter {
     this.increment = parseInt(increment);
     this.teamIdNameH2 = "e" + idMarker + "H2";
     this.buttonIncrementId = "bM" + idMarker;
+    this.inputCounterName = "iM" + idMarker;
   }
   generateHTMLStructure() {
     return (
-      '<div class="counter__card"><input class="counter__card--name" type="text" value="" placeholder="Ingresa un nombre"></input><h2 id="' +
+      '<div class="counter__card"><input class="counter__card--name" type="text" value="" placeholder="Ingresa un nombre" id=' +
+      this.inputCounterName +
+      '></input><h2 id="' +
       this.teamIdNameH2 +
       '" class="counter__card--number">' +
       this.counter +
