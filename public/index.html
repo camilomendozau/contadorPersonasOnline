@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="spa">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,22 +21,53 @@
   </head>
   <body>
     <header>
-      <h1 class="main-title">ContOnline</h1>
-
       <nav class="menu-bar-container">
-        <svg class="menu-bar__image-svg-icon">
+        <h1 class="main-title" id="mainTitle">
+          <!-- <a href="/public/index.html">ContOnline</a> -->
+          ContOnline
+        </h1>
+        <!-- <svg class="close-menu-bar__image-svg-icon">
+          <line x1="10" y1="30" x2="30" y2="10" />
+          <line x1="10" y1="10" x2="30" y2="30" />
+        </svg> -->
+        <svg class="menu-bar__toggle">
           <line x1="6" y1="11" x2="34" y2="11" />
           <line x1="6" y1="21" x2="34" y2="21" />
           <line x1="6" y1="31" x2="34" y2="31" />
         </svg>
-        <svg class="menu-bar__image-svg-icon">
-          <line x1="10" y1="30" x2="30" y2="10" />
-          <line x1="10" y1="10" x2="30" y2="30" />
-        </svg>
         <ul class="nav-bar__links">
-          <li><a href="/" class="nav-bar__item">Home</a></li>
-          <li><a href="/" class="nav-bar__item">Contactanos</a></li>
-          <li><a href="/" class="nav-bar__item">Ayuda</a></li>
+          <li><a href="/" class="nav-bar__item">Otros proyectos</a></li>
+          <!-- <li><a href="/" class="nav-bar__item">Apoya este proyecto</a></li> -->
+          <li><a href="/" class="nav-bar__item">Como usar la App</a></li>
+          <li>
+            <form
+              action="https://www.paypal.com/donate"
+              method="post"
+              target="_top"
+              class="donate-button"
+            >
+              <input
+                type="hidden"
+                name="hosted_button_id"
+                value="2QD2JUFANK9WA"
+              />
+              <input
+                type="image"
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                border="0"
+                name="submit"
+                title="PayPal - The safer, easier way to pay online!"
+                alt="Donate with PayPal button"
+              />
+              <img
+                alt=""
+                border="0"
+                src="https://www.paypal.com/en_PE/i/scr/pixel.gif"
+                width="1"
+                height="1"
+              />
+            </form>
+          </li>
         </ul>
       </nav>
     </header>
@@ -46,7 +77,13 @@
       </div>
       <div class="fixed-buttons-container">
         <div class="add-counter-button--container">
-          <button class="add-button" type="button" id="addNewCounterButton">
+          <button
+            class="float-button"
+            type="button"
+            id="addNewCounterButton"
+            aria-label="Añadir Nuevo Contador"
+            title="Boton para añadir contador"
+          >
             <svg class="menu-bar__image-svg-icon">
               <line x1="10" y1="13" x2="30" y2="13" />
               <line x1="20" y1="3" x2="20" y2="23" />
@@ -54,16 +91,15 @@
           </button>
         </div>
         <div class="share-whatsapp-button--container">
-          <button class="add-button" type="button" id="shareWhatsappButton">
+          <button class="float-button" type="button" id="shareWhatsappButton">
             <!-- <img
               src="./assets/icons/whatsapp.png"
               alt="whatsapp-icon"
-              class="share-icon"
+              class="whatsapp-icon"
             /> -->
-
             <img
               class="share-icon"
-              src="/public/assets/icons/share-icon.png"
+              src="./assets/icons/share-icon.png"
               alt="share-icon"
             />
           </button>
@@ -81,9 +117,12 @@
     <!-- Initialize Firebase -->
 
     <!-- AdShort.co Banner code 468x60 END -->
+
     <script src="/__/firebase/init.js"></script>
     <script src="./js/counter.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/share.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
