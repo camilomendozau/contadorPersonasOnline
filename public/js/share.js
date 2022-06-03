@@ -45,5 +45,3 @@ function shareMessageByWhatsapp() {
   }
   window.open(msgToshare, "_blank");
 }
-
-function getMsgToAsm(element) {}

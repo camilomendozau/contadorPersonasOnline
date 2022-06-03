@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "contadorparareunionesonline",
+    "site": "contonline",
     "public": "public",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [

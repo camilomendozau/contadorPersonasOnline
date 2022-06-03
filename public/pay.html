@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>ContOnline - Apoya este proyecto</title>
+  </head>
+  <body>
+    <header>
+      <h1
+        class="main-title"
+        id="mainTitle"
+        style="font-size: 0.8rem; align-self: center; justify-self: center"
+      >
+        APOYA ESTE PROYECTO
+      </h1>
+    </header>
+    <main>
+      <div class="counters--container">
+        <div class="counter__card">
+          <form
+            action="https://www.paypal.com/donate"
+            method="post"
+            target="_top"
+            class="donate-button"
+          >
+            <input
+              type="hidden"
+              name="hosted_button_id"
+              value="2QD2JUFANK9WA"
+            />
+            <input
+              type="image"
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+              border="0"
+              name="submit"
+              title="PayPal - The safer, easier way to pay online!"
+              alt="Donate with PayPal button"
+            />
+            <img
+              alt=""
+              border="0"
+              src="https://www.paypal.com/en_PE/i/scr/pixel.gif"
+              width="1"
+              height="1"
+            />
+          </form>
+        </div>
+        <div class="counter__card">
+          <img src="./assets/icons/bitcoin-qr" alt="" class="address-qr--img" />
+          <textarea
+            id="textAreaBitcoin"
+            class="counter__card--name address-crypto--text"
+          >
+14WzhMUo55ARfrXdKbPMjXk1QRGpWEa89d</textarea
+          >
+          <button onclick="setElementBitcoin()">Copiar</button>
+        </div>
+        <div class="counter__card">
+          <img
+            src="./assets/icons/ethereum-qr"
+            alt=""
+            class="address-qr--img"
+          />
+          <textarea
+            id="textAreaEth"
+            class="counter__card--name address-crypto--text"
+          >
+0xfa377405971676e81e61ccf3b670b6f82c9c791b</textarea
+          >
+          <button onclick="setElementEth()">Copiar</button>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script>
+      function setElementBitcoin() {
+        copyToClipBoard("textAreaBitcoin");
+      }
+      function setElementEth() {
+        copyToClipBoard("textAreaEth");
+      }
+      function copyToClipBoard(elementAddress) {
+        var content = document.getElementById(elementAddress);
+        content.select();
+        document.execCommand("copy");
+        //alert("Direccion Copiada!");
+        Swal.fire({
+          title: "Copiado!",
+          icon: "success",
+        });
+      }
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

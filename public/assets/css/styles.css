@@ -143,13 +143,6 @@ line {
   gap: 10px;
   grid-template-rows: 50% 50%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* display: flex;
-  /* flex-direction: row; */
-  /* justify-content: center;
-  align-items: center; */
-  /* overflow-x: scroll;
-  overscroll-behavior-x: inherit;
-  scroll-snap-type: proximity; */
 }
 .counter__card {
   width: 70%;
@@ -275,15 +268,15 @@ line {
     margin: auto 0;
     display: block;
     overflow-y: scroll;
-    overscroll-behavior-x: inherit;
+    overscroll-behavior-x: contain;
     scroll-snap-type: proximity;
     margin-left: 5%;
   }
   .counter__card {
     height: 350px;
-    width: 80%;
+    width: 85%;
     margin-top: 8%;
-    margin-left: 7%;
+    margin-left: 5%;
   }
   .menu-bar__toggle {
     display: block;
@@ -327,5 +320,12 @@ line {
     border-radius: 0.25rem;
     box-shadow: 0px -1px 9px 7px rgba(224, 110, 110, 0.2);
     font-size: 0.6rem;
+  }
+  .address-crypto--text {
+    font-size: 0.38rem;
+  }
+  .address-qr--img {
+    width: 50%;
+    margin: 3%;
   }
 }
