@@ -30,7 +30,7 @@ function shareMessageByWhatsapp() {
       console.log(counterName);
       if (counterName == "") {
         msgToAssemble =
-          "%0A-%20*sin%20nombre*%20asistieron%20*" +
+          "%0A-%20*sin%20nombre*%20habia%20*" +
           listaContadores[i].counter +
           "*%20personas";
       } else {
@@ -40,7 +40,7 @@ function shareMessageByWhatsapp() {
         msgToAssemble =
           "%0A-%20*" +
           counterName +
-          "*%20asistieron%20*" +
+          "*%20habia%20*" +
           listaContadores[i].counter +
           "*%20personas";
       }

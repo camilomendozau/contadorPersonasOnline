@@ -1,10 +1,27 @@
 const mainTitle = document.getElementById("mainTitle");
 const navToggle = document.querySelector(".menu-bar__toggle");
 const navMenu = document.querySelector(".nav-bar__links");
+// window.onbeforeunload = function () {
+//   Swal.fire({
+//     text: "",
+//     html:
+//       "<b class='text-alert'>¿Recargar la pagina? <br>Perdera el avance que tiene</b>",
+//     icon: "warning",
+//     showDenyButton: true,
+//     confirmButtonText: `Continuar`,
+//     denyButtonText: `Cancelar`,
+//   }).then((result) => {
+//     /* Read more about isConfirmed, isDenied below */
+//     if (result.isConfirmed) {
+//       window.location.reload();
+//     }
+//   });
+// };
 mainTitle.addEventListener("click", function () {
   Swal.fire({
     text: "",
-    html: "<b class='text-alert'>Estas a punto de recargar la pagina</b>",
+    html:
+      "<b class='text-alert'>¿Recargar la pagina?<br>Perdera el avance que tiene</b>",
     icon: "warning",
     showDenyButton: true,
     confirmButtonText: `Continuar`,
